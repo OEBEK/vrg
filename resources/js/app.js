@@ -1,0 +1,20 @@
+import { createApp } from 'vue';
+import ExampleComponent from './components/ExampleComponent.vue';
+import TodoListItem from './components/TodoListItem.vue';
+import TodoList from './components/TodoList.vue';
+import Login from './components/Login.vue';
+import Register from './components/Register.vue';
+import CreateTodo from './components/CreateTodo.vue';
+import EditTodo from './components/EditTodo.vue';
+import ShowTodo from './components/ShowTodo.vue';
+ 
+const app = createApp({});
+app.component('example-component', ExampleComponent);
+app.component('todo-list-item', TodoListItem);
+app.component('todo-list', TodoList);
+app.component('login-form', Login);
+app.component('register-form', Register);
+app.component('create-todo', CreateTodo);
+app.component('edit-todo', EditTodo);
+app.component('show-todo', ShowTodo);
+app.mount('#app');
